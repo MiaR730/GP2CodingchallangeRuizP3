@@ -29,11 +29,7 @@ class Challanges
         int ageInDays = AgeInDays(ageInYears);
 
         Console.WriteLine($"Your age is days is: {ageInDays} days.");
-
-        Console.WriteLine("Enter a number");
-        Console.WriteLine(IsLessThanOrEqualToZero(5));
-        Console.WriteLine(IsLessThanOrEqualToZero(0));
-        Console.WriteLine(IsLessThanOrEqualToZero(-10));
+     
 
     }
 
@@ -45,19 +41,11 @@ class Challanges
 
     static int AgeInDays(int ageInYears)
     {
-        int daysInYear = 3665;
+        int daysInYear = 365;
         return ageInYears * daysInYear;
     }
 
-    static double CalculateTriangleArea(double baselength, double height)
-    {
-        return 0.5 * baselength * height;
-    }
 
-
-    static bool IsLessThanOrEqualToZero(int number)
-    {
-        return number <= 0;
-    }
+    
 }
   
