@@ -29,13 +29,6 @@ class Challanges
 
         Console.WriteLine("Your age is days is: " + ageInDays + " days.");
 
-        bool originalValue1 = true;
-        boolreversedValue1 = ReverseBoolean(originalValue1);
-        Console.WriteLine($"Original: {oringinalValue1}, Reversed: {reversedValue1}");
-
-        bool oringinalValue2 = false;
-        bool reversedValue2 = ReversBoolean(oringinalValue2);
-        Console..WriteLine($"Original: {oringinalValue2}, Reversed: {reversedValue2}")
 
         Console.WriteLine("Enter a number of hours:");
         int hours = int.Parse(Console.ReadLine());
@@ -45,7 +38,7 @@ class Challanges
     }
 
     public static int Sum(int number1, int number2)
-    { 
+    {
         return number1 + number2;
     }
 
@@ -55,15 +48,9 @@ class Challanges
         return ageInYears * daysInYear;
     }
 
-    static bool ReverseBoolean(bool value)
-    {
-        return !value;
-    }
-    
     static int ConvertHoursToSeconds(int hours)
     {
-        return hours * 3600; 
+        return hours * 3600;
     }
 
 }
-  
