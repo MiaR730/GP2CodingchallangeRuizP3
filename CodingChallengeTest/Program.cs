@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Text.RegularExpressions;
+using System.Text;
 
 class Challanges
 {
@@ -39,6 +41,19 @@ class Challanges
         int sumOfAngles = CalculateInternalAngleSum(n);
         Console.WriteLine("The sum of the internal angles of a n-sided polygon is {sumOfAngles} degrees.");
 
+        Console.WriteLine("Enter a number from 1 to 12");
+        if (int.TryParse(Console.ReadLine(), out int monthnumber));
+        {
+            string monthName = GetMonthName(monthnumber);
+            if (monthName != null)
+            {
+                Console.WriteLine("The corresponding month is:" + "{monthName}");
+            }
+            else
+            {
+                Console.WriteLine("Invalid input. Please enter a number from 1 to 12.");
+            }
+        }
     }
 
     public static int Sum(int number1, int number2)
@@ -60,5 +75,25 @@ class Challanges
     static int CalculateInternalAngleSum(int n)
     {
         return (n - 2) * 180;
+    }
+
+    static string GetMonthName(int monthNumber)
+    {
+        switch (monthNumber)
+        {
+            case 1: return "January";
+            case 2: return "February";
+            case 3: return "March";
+            case 4: return "April";
+            case 5: return "May";
+            case 6: return "June";
+            case 7: return "July";
+            case 8: return "August";
+            case 9: return "September";
+            case 10: return "October";
+            case 11: return "November";
+            case 12: return "December";
+            default: return null;
+        }
     }
 }
