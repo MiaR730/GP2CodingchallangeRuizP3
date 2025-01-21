@@ -54,7 +54,7 @@ class Challanges
                 Console.WriteLine("Invalid input. Please enter a number from 1 to 12.");
             }
         }
-    }
+     }
 
     public static int Sum(int number1, int number2)
     {
@@ -62,7 +62,7 @@ class Challanges
     }
 
     static int AgeInDays(int ageInYears)
-    {
+    { 
         int daysInYear = 365;
         return ageInYears * daysInYear;
     }
